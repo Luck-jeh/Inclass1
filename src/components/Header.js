@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types'
 import Button from './Button'
+import React from 'react'
+import ReactDOM from 'react-dom'
 
 const Header = ({title, onSearch}) => {
   return (

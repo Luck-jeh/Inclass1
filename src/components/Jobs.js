@@ -26,11 +26,11 @@ export default function Jobs({onDelete}) {
         }
     */
     return (
-        <>{
+        <React.Fragment>{
         APIData.map((job) =>  
         (<Job key={job.id} job={job} onDelete={onDelete}/>
         ))
-    }</>)}
+    }</React.Fragment>)}
 
 /*
 

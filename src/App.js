@@ -2,10 +2,11 @@ import Header from './components/Header'
 import Jobs from './components/Jobs'
 import {useState} from  'react'
 import SearchJob from  './components/SearchJob'
+import React from 'react'
+import ReactDOM from 'react-dom'
 
 const App = () => {
- const [showSearchJob, setShowSearchJob] = useState
-  (false)
+ const [showSearchJob, setShowSearchJob] = useState(false)
   const [jobs, setJobs]= useState([])
    /* {
         id: 1,

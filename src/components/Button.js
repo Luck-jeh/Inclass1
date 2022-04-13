@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types'
+import React from 'react'
+import ReactDOM from 'react-dom'
 
 const Button = ({color, text, onClick}) => {
 
