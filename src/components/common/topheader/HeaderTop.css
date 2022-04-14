@@ -3,6 +3,10 @@
     align-items: center;
     justify-content: space-between;
     background-color: #1b71eb;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
 }
 
 .topHeader-logo {
@@ -13,6 +17,11 @@
 
 .header-logo {
     text-decoration: none;
+    color: white;
+}
+
+a.header-logo:hover {
+    color: red;
 }
 
 
