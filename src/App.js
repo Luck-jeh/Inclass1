@@ -6,7 +6,6 @@ import React from 'react';
 import { HeaderTop } from './components/common';
 
 const App = () => {
- const [showSearchJob, setShowSearchJob] = useState(false)
   const [jobs, setJobs]= useState([])
    /* {
         id: 1,
@@ -20,10 +19,7 @@ const App = () => {
     },
     ])*/
 
-//Search Job
-const searchJob = (text) => {
-  setJobs(jobs.filter((job) => job.text === text))
-}
+
 
 //Delete Job
   const deleteJob = (id) => {
@@ -37,8 +33,7 @@ console.log("job id:" + id)
     <React.Fragment>
       <HeaderTop />
       <div className="container">
-        <Header onSearch={() => setShowSearchJob}/>
-        {showSearchJob && <SearchJob onSearch={searchJob}/>}
+        <Header/>
         {<Jobs jobs={jobs} onDelete={deleteJob}/>}
       </div>
     </React.Fragment>
