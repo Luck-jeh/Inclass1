@@ -2,14 +2,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
+    background-color: #1b71eb;
 }
 
 .topHeader-logo {
     margin-left: 25px;
     font-size: 2em;
+    color: white;
 }
 
 .header-logo {
     text-decoration: none;
+}
+
+
+.topHeader-navbar {
+    margin-right: 25px;
 }

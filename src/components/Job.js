@@ -11,7 +11,7 @@ const  Job = ({job, onDelete}) => {
         </h3>
         <p>{job.title}</p>
         <p>{job.company}</p>
-        <a href={job.link}><p>"Apply"</p></a>
+        <a className="job-link" href={job.link}><p>Apply</p></a>
     </div>
   )
 }

@@ -6,3 +6,15 @@
 .nav-item {
     text-decoration: none;
 }
+
+a.nav-item:visited {
+    color: white;
+}
+
+a.nav-item:hover {
+    color: red;
+}
+
+a.nav-item {
+    color: white;
+}

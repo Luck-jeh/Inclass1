@@ -13,7 +13,7 @@ const Header = ({title, onSearch}) => {
 }
 
 Header.defaultProps = {
-    title: 'Clairlist'
+    title: 'ClareList'
 }
 
 Header.propTypes = {title: PropTypes.string.isRequired,

@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+.job-link {
+  color: red;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   text-align: center;
