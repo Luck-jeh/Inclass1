@@ -1,0 +1,15 @@
+.topHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.topHeader-logo {
+    margin-left: 25px;
+    font-size: 2em;
+}
+
+.header-logo {
+    text-decoration: none;
+}

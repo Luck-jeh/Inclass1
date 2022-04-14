@@ -6,7 +6,7 @@ export default function Jobs({onDelete}) {
     //const [searchTerm, setSearchTerm] = useState('');
     //const [filteredResults, setFilteredResults] = useState([]);
     useEffect(() => {
-        axios.get(`https://mycapapijs.herokuapp.com/`)
+        axios.get(`http://localhost:5000/`)
             .then((response) => {
                 setAPIData(response.data);
             })

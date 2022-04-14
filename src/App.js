@@ -1,9 +1,9 @@
-import Header from './components/Header'
-import Jobs from './components/Jobs'
-import {useState} from  'react'
-import SearchJob from  './components/SearchJob'
-import React from 'react'
-import ReactDOM from 'react-dom'
+import Header from './components/Header';
+import Jobs from './components/Jobs';
+import {useState} from  'react';
+import SearchJob from  './components/SearchJob';
+import React from 'react';
+import { HeaderTop } from './components/common';
 
 const App = () => {
  const [showSearchJob, setShowSearchJob] = useState(false)
@@ -34,11 +34,14 @@ console.log("job id:" + id)
 
 
   return (
-    <div className="container">
-      <Header onSearch={() => setShowSearchJob}/>
-      {showSearchJob && <SearchJob onSearch={searchJob}/>}
-      {<Jobs jobs={jobs} onDelete={deleteJob}/>}
-    </div>
+    <React.Fragment>
+      <HeaderTop />
+      <div className="container">
+        <Header onSearch={() => setShowSearchJob}/>
+        {showSearchJob && <SearchJob onSearch={searchJob}/>}
+        {<Jobs jobs={jobs} onDelete={deleteJob}/>}
+      </div>
+    </React.Fragment>
   )
 }
 
