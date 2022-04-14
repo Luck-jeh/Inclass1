@@ -7,7 +7,6 @@ const Header = ({title, onSearch}) => {
   return (
     <header className='header'>
         <h1>{title}</h1>
-        <Button color='green' text='Search' onClick={onSearch}></Button>
     </header>
   )
 }

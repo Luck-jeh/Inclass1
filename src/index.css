@@ -9,11 +9,21 @@
 
 .job-link {
   color: red;
+  text-decoration: none;
+  margin-left: auto;
+}
+
+.title {
+  color: white;
+}
+a.job-link:hover {
+  color: navy;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   text-align: center;
+  background-color: rgb(209, 248, 235);
 }
 
 .container {
@@ -21,7 +31,6 @@ body {
   margin: 100px auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid steelblue;
   padding: 30px;
   border-radius: 5px;
 }
